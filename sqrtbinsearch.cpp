@@ -45,9 +45,15 @@ int main()
 {
 	int x;
 	int temp=0;
+	double t;
+	clock_t start,end;
+	start=clock();
 	cout << "ENTER THE NUMBER\n";
 	cin >> x;
 	temp=sqrtofx(x);
 	cout << "SQRT OF THE GIVEN NUMBER "<< x << " is " << temp;
+	end=clock();
+	t+=(double)(end-start)/CLOCKS_PER_SEC;
+	cout << "\n TIME TAKEN BY THE PROGRAM IS"<<t;
 	return 0;
 }
