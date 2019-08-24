@@ -28,7 +28,13 @@ int sort_search(int a[],int n,int large,int k)
 	int i,j;
 	for(i=0;i<k;i++)
 	{
-		for(j=i+1;j<n-2;j++)
+		for(j=i+1;j<n-i-1;j++)
+		{
+			if(a[j+1]>a[j])
+			{
+				swap(&a[j+1],&a[j]);
+			}
+		}
 	}
 }
 
