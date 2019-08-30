@@ -40,4 +40,5 @@ int main()
 	scanf("%d",&k);
 	k_thele=sort_search(arr,num,k);
 	printf("K_TH SMALLEST ELEMENT IS %d\n",k_thele);
+   return 0;
 }
