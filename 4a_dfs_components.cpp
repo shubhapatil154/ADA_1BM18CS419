@@ -38,6 +38,7 @@ void node_visited()
 {
 	for(int j=0;j<n;j++)
 	{
+		cout<<"CONNECTED COMPONENT"<<j+1;
 		if(visited[j]==0)
 		{
 			dfs(j);
