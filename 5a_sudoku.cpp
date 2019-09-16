@@ -81,9 +81,15 @@ int main()
                       {1, 3, 0, 0, 0, 0, 2, 5, 0},
                       {0, 0, 0, 0, 0, 0, 0, 7, 4},
                       {0, 0, 5, 2, 0, 6, 3, 0, 0}};
+    double time;
+	clock_t start,end;
+    start=clock();
     if (SolveSudoku(grid) == true)
           printGrid(grid);
     else
         cout<<"No solution exists"<<endl;
+    end=clock();
+    time=(double)(end-start)/CLOCKS_PER_SEC;
+	cout<<"\n Time complexity is "<<time<<" secs";
     return 0;
 }
