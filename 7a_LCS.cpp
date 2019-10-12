@@ -2,6 +2,8 @@
 #include<iostream>
 #include<cstring>
 #include<cstdlib>
+#include<time.h>
+
 using namespace std;
 void lcs( char *X, char *Y, int m, int n )
 {
@@ -42,6 +44,8 @@ cout << "LCS of " << X << " and " << Y << " is " << lcs;
 int main()
 {
     int m,n,i;
+    double time;
+    clock_t  begin,end;
     char X[100];
     char Y[100];
     cout<<"ENTER THE SIZE OF 1ST STRING: "<<endl;
@@ -58,6 +62,25 @@ int main()
     {
         cin>>Y[i];
     }
+    begin=clock();
     lcs(X, Y, m, n);
+    end=clock();
+    time=(double)(end-begin)/CLOCKS_PER_SEC;
+	cout<<"\n Time complexity is "<<time<<" secs";
+
     return 0;
 }
+/************************OUTPUT*******************************/
+/*ENTER THE SIZE OF 1ST STRING:
+7
+ENTER THE SIZE OF 2ND STRING:
+6
+ENTER THE 1ST STRING :
+ABCBDAB
+ENTER THE 2ND STRING :
+BDCABA
+LCS of ABCBDAB→¶ and BDCABA is BDAB
+Time complexity is 0.002 secs
+
+*/
+
