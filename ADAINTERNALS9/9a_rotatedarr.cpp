@@ -73,3 +73,21 @@ int main()
     }
     return 0;
 }
+
+
+/********************************** output *********************************
+
+Enter size of array: 5
+Enter elements in array: 9 10 6 7 8
+Enter search item: 7
+Item found at index: 3
+
+
+Enter size of array: 4
+Enter elements in array: 3 4 1 2
+Enter search item: 5
+Item not found
+
+
+
+
