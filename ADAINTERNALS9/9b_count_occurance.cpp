@@ -82,9 +82,9 @@ Enter elements in array:
 1 2 2 2 3 5 6
 Enter search item: 
 1
-First Occurrence = 0 Last Occurrence = 1 count = 2
+First Occurrence = 0 Last Occurrence = 0 count = 1
 
-
+*******************************************************
 
 Enter size of array: 
 5
