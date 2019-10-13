@@ -53,7 +53,7 @@ void findFirstAndLast(int arr[], int n, int x)
     if (first != -1) 
         cout << "First Occurrence = " << first << " Last Occurrence = " << last; 
     else
-        cout << "Not Found"; 
+        cout << "First Occurrence = -1    Last Occurrence = -1 "; 
 } 
 int main()
 {
@@ -71,3 +71,27 @@ int main()
     cout <<" count = "<<countOccurrences(arr, n, x)<<endl;
     return 0;
 }
+
+
+
+/***************************** output *******************
+
+Enter size of array: 
+7
+Enter elements in array: 
+1 2 2 2 3 5 6
+Enter search item: 
+1
+First Occurrence = 0 Last Occurrence = 1 count = 2
+
+
+
+Enter size of array: 
+5
+Enter elements in array: 
+1 1 2 3 4
+Enter search item: 
+5
+First Occurrence = -1    Last Occurrence = -1  count = 0
+
+
