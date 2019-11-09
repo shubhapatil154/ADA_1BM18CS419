@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<time.h>
 using namespace std;
 bool isMaxHeap(int a[],int n){
     bool flag;
@@ -27,9 +28,8 @@ bool isMaxHeap(int a[],int n){
 }
 int main(){
     int a[20],n,t;
-    cout<<"Enter no. of testCases"<<endl;
-    cin>>t;
-    while(t--){
+    clock_t start,end;
+    double time;
         cout<<"Enter the size of array: ";
         cin>>n;
         cout<<n<<endl;
@@ -39,13 +39,17 @@ int main(){
             cout<<a[i]<<" ";
         }
         cout<<endl;
+        start = clock();
         if(isMaxHeap(a,n)){
             cout<<"True"<<endl;
         }
-        else{
+     
+   else{
             cout<<"False"<<endl;
         }
     }
-    
+  end = clock();
+  time=+(double)(end-start)/CLOCKS_PER_SEC;
+  cout<<"Time complexity:%f",d;
+  cout<<"\n";
 }
-
